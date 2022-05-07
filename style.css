@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
+body{
+    background-color: #000;
+}
+nav{
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    
+}
+nav img{
+    position: absolute;
+    
+}
+nav h1{
+    font: arial;
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    left: 550px;
+    top:50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+nav ul{
+    float:left;
+    position: absolute;
+    left: 1100px;
+    top: 15px;
+}
+nav ul li{
+    float:left;
+    padding:15px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding: 15px;
+    display:flex;
+    margin:10px;
+    color: aliceblue;
+}
+.timeline{
+    margin: 90px auto;
+    width: 360px;
+    border: 2px solid #ccc ;
+    border-right: 0px;
+    border-top:0px;
+    border-bottom: 0px;;
+    padding: 0 20px 0 30px;
+    background-color: #000;
+}
+div{
+    background-color: #fff;
+    padding: 10px 25px;
+    font-size: 6px;
+    border: 1px solid #ccc;
+    line-height: 1.7;
+    position: relative;
+    height: 130px;
+    width:329px;
+   margin-bottom:20px;
+}
+div.y::before{
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000;
+    border: 3px solid #ddd;
+    position: absolute;
+    top: 10px;
+    left: -40px;
+}
+div.y::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent #ddd transparent transparent;
+    border-width: 8px;
+    position: absolute;
+    left: -17px;
+    top: 10px;
+}
+div h2{
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Water Brush', cursive;
+    font-size: 35px;
+    }
+div h3{
+    margin:0;
+    font-family:cursive;
+    font-size: 20px;
+    
+}
+div h4{
+    margin: 0;
+    font-size:20px;
+}
+.y:hover{
+    transform:scale(1.1);
+    transition: 1.5s;
+}
+html{
+    scroll-behavior: smooth;
+}
+.about{
+    position:relative;
+    top: 120px;
+    left: 50%;
+    width:30em;
+    height:18em;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -20em; /*set to a negative number 1/2 of your width*/
+    border: 1px solid #ccc;
+    background-color: #000;
+    font-size: 20px;
+    font-family:sans-serif;
+    color: #ccc;
+    border-radius: 6%;  
+     width: 750px;
+     height: auto;
+}
+.about h2{
+    text-align: center;
+}
+.contact{
+    background-color: #000;
+    color:#ccc;
+    width:450px;
+    top:420px;
+    font-size: xx-large;
+    height: fit-content;
+}
